@@ -1,6 +1,170 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: 0;
+    font-family: "Rubik", sans-serif;
 }
 
+.lebify-btn-v4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 8px;
+    height: var(--lebify-btn-height);
+    width: var(--lebify-btn-width);
+    border: none;
+    background: #1F2937;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.lebify-btn-v4 .lable {
+    line-height: 20px;
+    font-size: 20px;
+    color: #0EA5E9;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.lebify-btn-v4:hover {
+    background: #444950;
+}
+
+.lebify-btn-v4 .svg-icon {
+    animation: lebify-btn-v4-spin 2s linear infinite;
+}
+
+@keyframes lebify-btn-v4-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* start ================================= */
+/* start ======= Edit Profile Image ====== */
+/* start ================================= */
+.lebify-btn-custom-9 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(30, 113, 223);
+    transition-duration: .3s;
+}
+
+.lebify-btn-custom-9 .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.lebify-btn-custom-9:hover {
+    color: transparent;
+}
+
+.lebify-btn-custom-9:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.lebify-btn-custom-9:active {
+    transform: translate(3px, 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+/* end ================================= */
+/* end ======= Edit Profile Image ====== */
+/* end ================================= */
+
+
+/* start =================================== */
+/* start ======= Delete Profile Image ====== */
+/* start =================================== */
+
+.button {
+    --main-focus: #2d8cf0;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    box-shadow: 5px 5px 0px rgb(30, 113, 223);
+
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+
+  .button .button__text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: 500;
+  }
+
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(65px);
+    height: 100%;
+    width: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button .svg {
+    width: 20px;
+    fill: white;
+  }
+
+
+
+  .button:hover .button__text {
+    color: transparent;
+  }
+
+  .button:hover .button__icon {
+    width: 100px;
+    transform: translateX(0);
+  }
+
+  .button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+
+/* end =================================== */
+/* end ======= Delete Profile Image ====== */
+/* end =================================== */

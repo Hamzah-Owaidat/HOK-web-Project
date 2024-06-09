@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChartController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -18,9 +19,20 @@ use Illuminate\Support\Facades\Route;
 */
 Route::middleware('auth')->group(function(){
 
-    Route::view('/', 'home')->name('home');
+    Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::post('auth/logout',[AuthController::class,'destroy'])->name('logout');
-    Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+    Route::prefix('profile')->group(function(){
+        Route::get('/{userId}', [ProfileController::class, 'index'])->name('profile');
+        Route::get('/{userId}/edit', [ProfileController::class, 'edit'])->name('edit.profile');
+        Route::post('/{userId}', [ProfileController::class, 'update'])->name('update.profile');
+        
+
+
+    });
+
+
+
+
 
 });
 
