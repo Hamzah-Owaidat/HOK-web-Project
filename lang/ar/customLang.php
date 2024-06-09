@@ -22,4 +22,14 @@ return [
     'logout' => 'تسجيل خروج',
     'profile' => 'الملف الشخصي',
     'Blog' => 'Blog',
+    'Minesweeper' => 'كاسحة الالغام',
+    'Sudoku' => 'سودوكو',
+    'Scores' => 'نقاط',
+    'Edit profile' => 'تعديل الملف الشخصي',
+    'Bio' => 'السيرة الذاتية',
+    'Profile image' => 'صورة الملف الشخصي',
+    'Edit' => 'تعديل',
+    'Delete' => 'مسح',
+    'Submit' => 'تأكيد',
+
 ];

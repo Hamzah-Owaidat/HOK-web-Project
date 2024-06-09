@@ -29,7 +29,7 @@
                             clip-rule="evenodd"></path>
                     </g>
                 </svg>
-                <span class="lable">edit profile</span>
+                <span class="lable">{{ __("customLang.Edit profile") }}</span>
                 </button>
             </a>
         </div>
@@ -41,7 +41,7 @@
         @foreach($scores->groupBy('game.game_name') as $gameName => $gameScores)
 
         <div class="pb-8">
-            <h2 class="text-center text-2xl text-sky-500">{{ $gameName }}</h2>
+            <h2 class="text-center text-2xl text-sky-500">{{ __('customlang.'.$gameName) }}</h2>
             <canvas id="{{ Str::slug($gameName) }}Chart" width="1000" height="600"></canvas>
         </div>
 
@@ -55,7 +55,7 @@
                 })->toArray();
             @endphp
 
-                var dates = @json($dates);
+            var dates = @json($dates);
             var scores = @json($gameScores -> pluck('score') -> toArray());
 
             var chart = new Chart(ctx, {
@@ -63,11 +63,12 @@
                 data: {
                     labels: dates,
                     datasets: [{
-                        label: 'Scores',
+                        label: '{{ __("customlang.Scores") }}',
                         data: scores,
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        borderWidth: 1
+                        backgroundColor: 'white',
+                        borderColor: 'rgb(30, 113, 223)',
+                        borderWidth: 2,
+                        pointStyle: 'circle',
                     }]
                 },
                 options: {
@@ -83,11 +84,25 @@
                                 beginAtZero: true
                             }
                         }]
-                    }
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                // This more specific font property overrides the global property
+                                font: {
+                                    size: 25
+                                },
+                                boxWidth: 10,
+                                boxHeight: 10,
+                            }
+                        }
+                    },
+
                 }
             });
 
         </script>
+
 
     @endforeach
     </div>

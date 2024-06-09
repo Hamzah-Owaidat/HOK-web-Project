@@ -22,4 +22,13 @@ return [
     'logout' => 'Logout',
     'profile' => 'Profile',
     'Blog' => 'Blog',
+    'Minesweeper' => 'Minesweeper',
+    'Sudoku' => 'Sudoku',
+    'Scores' => 'Scores',
+    'Edit profile' => 'Edit profile',
+    'Bio' => 'Bio',
+    'Profile image' => 'Profile image',
+    'Edit' => 'Edit',
+    'Delete' => 'Delete',
+    'Submit' => 'Submit',
 ];

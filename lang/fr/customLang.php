@@ -22,6 +22,14 @@ return [
     'logout' => 'Déconnexion',
     'profile' => 'Profil',
     'Blog' => 'Blogue',
-
+    'Minesweeper' => 'Minesweeper',
+    'Sudoku' => 'Sudoku',
+    'Scores' => 'points',
+    'Edit profile' => 'Editer le profil',
+    'Bio' => 'Biographie',
+    'Profile image' => 'Image de profil',
+    'Edit' => 'Modifier',
+    'Delete' => 'Supprimer',
+    'Submit' => 'Soumettre',
 
 ];
