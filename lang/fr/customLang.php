@@ -31,5 +31,15 @@ return [
     'Edit' => 'Modifier',
     'Delete' => 'Supprimer',
     'Submit' => 'Soumettre',
+    'Minesweeper_details' => 'Minesweeper est un jeu de réflexion classique dans lequel les joueurs découvrent des carrés sur une grille, en évitant les mines cachées. Les chiffres indiquent combien de mines il y a adjacent, ajoutant un défi stratégique à chaque mouvement.',
+
+     'Sudoku_details' =>
+     'Le Sudoku est un casse-tête logique difficile qui consiste à remplir une grille 9x9 avec des chiffres, en garantissant l\'absence de répétition dans les lignes, les colonnes ou les sous-grilles 3x3, en utilisant la pensée analytique et les compétences en résolution de problèmes.',
+
+     'Our Games' => 'Nos jeux',
+     'Popular activity' => 'Activité populaire',
+     'Your ultimate destination for fun and challenging games.' => 'Votre destination ultime pour des jeux amusants et stimulants.',
+
+     'game_description' => 'Chez HOK, nous proposons une collection de jeux passionnants comme le Démineur et le Sudoku. Que vous cherchiez à tester vos compétences logiques ou simplement à vous amuser, vous trouverez votre bonheur ici. Découvrez notre sélection de jeux et rejoignez notre communauté de joueurs !',
 
 ];

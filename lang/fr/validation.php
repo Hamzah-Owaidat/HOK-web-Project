@@ -68,7 +68,7 @@ return [
         'string' => 'The :attribute field must be greater than or equal to :value characters.',
     ],
     'hex_color' => 'The :attribute field must be a valid hexadecimal color.',
-    'image' => 'The :attribute field must be an image.',
+    'image' => 'Le champ :attribute doit être une image.',
     'in' => 'The selected :attribute is invalid.',
     'in_array' => 'The :attribute field must exist in :other.',
     'integer' => 'The :attribute field must be an integer.',
@@ -190,6 +190,7 @@ return [
         'username' => 'nom d\'utilisateur',
         'email' => 'adresse e-mail',
         'password' => 'mot de passe',
+        'profile_image' => 'image de profil'
     ],
 
 ];

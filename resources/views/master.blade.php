@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     {{-- TAilwind CSS --}}
     <script src="https://cdn.tailwindcss.com"></script>
+
     {{-- CSS LINK --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -16,6 +18,9 @@
 
     {{-- Chart.JS Link --}}
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    {{-- SLICK JS --}}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
     <title>HOK @yield('title')</title>
@@ -38,5 +43,12 @@
 
 </body>
 
+<!-- jquery -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+{{-- SLICK JS --}}
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+@yield('scripts')
 </html>

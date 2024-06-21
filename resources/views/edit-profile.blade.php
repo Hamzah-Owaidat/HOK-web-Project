@@ -40,6 +40,9 @@
 
             </div>
 
+            @error('profile_image')
+            <p class="text-red-500">{{ $message }}</p>
+            @enderror
         </div>
 
         {{-- Username --}}

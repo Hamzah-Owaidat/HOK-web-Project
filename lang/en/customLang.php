@@ -31,4 +31,13 @@ return [
     'Edit' => 'Edit',
     'Delete' => 'Delete',
     'Submit' => 'Submit',
+    'Minesweeper_details' => 'Minesweeper is a classic puzzle game where players uncover squares on a grid, avoiding hidden mines. Numbers indicate how many mines are adjacent, adding a strategic challenge to each move.',
+
+     'Sudoku_details' => 'Sudoku is a challenging logic puzzle that involves filling a 9x9 grid with digits, ensuring no repetition in rows, columns, or 3x3 sub-grids, utilizing analytical thinking and problem-solving skills.',
+
+     'Our Games' => 'Our Games',
+     'Popular activity' => 'Popular activity',
+     'Your ultimate destination for fun and challenging games.' => 'Your ultimate destination for fun and challenging games.',
+
+     'game_description' => 'At HOK, we offer a collection of engaging games like Minesweeper and Sudoku. Whether you\'re looking to test your logic skills or just have some fun, you\'ll find it here. Check out our game selection and join our community of gamers!',
 ];

@@ -264,3 +264,15 @@
 /* end ============================ */
 /* end ======= Logout Button ====== */
 /* end ============================ */
+
+
+.typed-cursor{
+    display: inline-block;
+    margin-left: 4px;
+    /* Add any other styles for the cursor here */
+}
+
+
+
+
+
