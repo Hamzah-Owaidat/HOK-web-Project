@@ -15,7 +15,6 @@ class GameFactory extends Factory
 
         return [
             'game_name' => $this->faker->randomElement($games),
-            'description' => $this->faker->sentence,
             'difficulty' => $this->faker->randomElement(['Easy', 'Medium', 'Hard']),
         ];
     }

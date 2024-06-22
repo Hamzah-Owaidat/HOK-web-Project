@@ -40,4 +40,9 @@ return [
      'Your ultimate destination for fun and challenging games.' => 'Your ultimate destination for fun and challenging games.',
 
      'game_description' => 'At HOK, we offer a collection of engaging games like Minesweeper and Sudoku. Whether you\'re looking to test your logic skills or just have some fun, you\'ll find it here. Check out our game selection and join our community of gamers!',
+
+     'Easy' => 'Easy',
+     'Normal' => 'Normal',
+     'Hard' => 'Hard',
+
 ];

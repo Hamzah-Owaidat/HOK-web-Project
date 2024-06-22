@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChartController;
+use App\Http\Controllers\GamesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LangController;
 use App\Http\Controllers\ProfileController;
@@ -20,14 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth')->group(function(){
 
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/games/{id}', [GamesController::class, 'index'])->name('games');
     Route::post('auth/logout',[AuthController::class,'destroy'])->name('logout');
     Route::prefix('profile')->group(function(){
         Route::get('/{userId}', [ProfileController::class, 'index'])->name('profile');
         Route::get('/{userId}/edit', [ProfileController::class, 'edit'])->name('edit.profile');
         Route::post('/{userId}', [ProfileController::class, 'update'])->name('update.profile');
-        
-
-
     });
 
 

@@ -41,5 +41,7 @@ return [
      'Your ultimate destination for fun and challenging games.' => 'Votre destination ultime pour des jeux amusants et stimulants.',
 
      'game_description' => 'Chez HOK, nous proposons une collection de jeux passionnants comme le Démineur et le Sudoku. Que vous cherchiez à tester vos compétences logiques ou simplement à vous amuser, vous trouverez votre bonheur ici. Découvrez notre sélection de jeux et rejoignez notre communauté de joueurs !',
-
+    'Easy' => 'Facile',
+    'Normal' => 'Normale',
+    'Hard' => 'Difficile',
 ];
