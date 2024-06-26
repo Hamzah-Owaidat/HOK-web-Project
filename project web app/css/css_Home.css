@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: #948e8e;
+}
+.homhead #sudoku{
+    background-image: url("../images/sudoku.jpeg");
+    width: 392px;
+    height: 220px;
+    margin: 30px;
+    margin-left: 150px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    position: relative; 
+    margin-top: 100px;
+}
+.homhead #Minesweeper{
+    background-image: url("../images/minesweeper.jpg");
+    width: 392px;
+    height: 220px;
+    margin: 30px;
+    margin-left: 150px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+#cap {
+    position: absolute;
+    bottom: 0;
+    font-size: large;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hover:hover{
+    width: 392px;
+    height: 220px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.homhead a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: x-large;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+
+}
+/*.homhead a:hover{
+    opacity: 1;
+}*/
