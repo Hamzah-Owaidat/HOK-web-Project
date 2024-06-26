@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/daniseifeddine/Ds-Validator-Toolkit/main/media/logo.png" alt="Logo" width="200">
+</p>
+
 # HOK
 
 HOK is a web application that offers user authentication, personalized profiles, and games like Sudoku and Minesweeper. The website is built with Laravel for the main application and Flask for the games, supporting multiple languages with various features and effects to enhance user experience.
