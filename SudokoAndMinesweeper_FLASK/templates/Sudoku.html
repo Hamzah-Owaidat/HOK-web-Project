@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css_Sudoku.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Timer</title>
+    <div id="bord">
+        <form action="" method="post">
+            {% if p[0] != "" %}
+            <button class="button" type="submit" name="nb" value="1">
+                <div class="bn">
+                    1 <br>
+                    {%print(p[0])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">1</font><br><br>  
+                </div>
+            </button>
+            {%endif%}
+            {% if p[1] != "" %}
+            <button class="button" type="submit" name="nb" value="2">
+                <div class="bn">
+                    2<br>
+                    {%print(p[1])%}   
+                </div>
+            </button>  
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">2</font><br><br>  
+                </div>
+            </button>
+            {%endif%}
+            {% if p[2] != "" %}          
+            <button class="button" type="submit" name="nb" value="3">
+                <div class="bn">
+                    3<br>
+                    {%print(p[2])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">3</font><br><br>  
+                </div>
+            </button>
+            {%endif%}<br>
+            {% if p[3] != "" %}            
+            <button class="button" type="submit" name="nb" value="4">
+                <div class="bn">
+                    4<br>
+                    {%print(p[3])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">4</font><br><br>  
+                </div>
+            </button>
+            {%endif%}        
+            {% if p[4] != "" %}    
+            <button class="button" type="submit" name="nb" value="5">
+                <div class="bn">
+                    5<br>
+                    {%print(p[4])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">5</font><br><br>  
+                </div>
+            </button>
+            {%endif%}        
+            {% if p[5] != "" %}    
+            <button class="button" type="submit" name="nb" value="6">
+                <div class="bn">
+                    6<br>
+                    {%print(p[5])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">6</font><br><br>  
+                </div>
+            </button>
+            {%endif%}  <br>  
+            {% if p[6] != "" %}        
+            <button class="button" type="submit" name="nb" value="7">
+                <div class="bn">
+                    7<br>
+                    {%print(p[6])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">7</font><br><br>  
+                </div>
+            </button>
+            {%endif%}        
+            {% if p[7] != "" %}    
+            <button class="button" type="submit" name="nb" value="8">
+                <div class="bn">
+                    8<br>
+                    {%print(p[7])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">8</font><br><br>  
+                </div>
+            </button>
+            {%endif%}        
+            {% if p[8] != "" %}    
+            <button class="button" type="submit" name="nb" value="9">
+                <div class="bn">
+                    9<br>
+                    {%print(p[8])%}   
+                </div>
+            </button>
+            {% else %}
+            <button class="button" type="submit" name="nb" value=" ">
+                <div class="bn">
+                    <font color="red">9</font><br><br>  
+                </div>
+            </button>
+            {%endif%}     
+            <button class="button" type="submit" name="nb" value="0">
+                <div class="bb">
+                    
+                    Clear  
+                </div>       
+            </button>
+            </div>
+                <div id="a">
+                    {% for x in range(9) %}
+                        <div class="b">
+                            {% for y in range(9) %}
+                                <div class="c">
+                                    <button class="l" type="submit" name="l" value="{{ '%s%s%s' | format(x,y,r) }}">
+                                        {% if lisc[x][y] == "white" %}
+                                            {{lis[x][y]}}
+                                        {%elif lisc[x][y] == "green" %} 
+                                            <font color="green">{{ lis[x][y] }}</font>
+                                        {%elif lisc[x][y] == "red"%} 
+                                            <font color="red">{{ lis[x][y] }}</font>
+                                        {%endif%}
+                                    </button>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                </div>
+        </form>
+            {% if n == 2 %}
+                <div id="all"><div id="w">
+                    <h4>Well done, the solution was completed correctly</h4>
+                    <a href="http://127.0.0.1:8000/"><button>Go back home</button></a>
+                </div></div>    
+            {%endif%}
+</body>
+</html>
+
