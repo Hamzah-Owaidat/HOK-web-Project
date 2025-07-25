@@ -48,8 +48,6 @@ class AuthController extends Controller
         if ($user) {
             return redirect()->route('login_view')->with('success', 'Registration successful! Please log in.');
         } else {
-            // If user creation fails for some reason, you can handle it accordingly
-            // For example, redirect back with an error message
             return redirect()->back()->with('error', 'Failed to register. Please try again.');
         }
     }
@@ -59,7 +57,7 @@ class AuthController extends Controller
 
         // Reset locale to English
         $request->session()->put('locale', 'en');
-        
+
         return redirect()->route('login_view');
 
     }
