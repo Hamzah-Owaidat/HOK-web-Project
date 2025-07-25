@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(53, 51, 51);
+    color: white;
+}
+#a {
+    background-color: black;
+    width: 450px;
+    height: 450px;
+    border: 4px solid rgb(102, 102, 102);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    margin: 0 auto;
+    gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.b {
+    width: 144px; 
+    height: 144px;
+    border: 3px solid rgb(102, 102, 102);
+    display: grid;
+    margin: 0 auto;
+    gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.c {
+    text-align: center;
+    line-height: 5  0px;
+    width: 46px;
+    height: 46px;
+    border: 1px solid rgb(102, 102, 102);
+}
+#bord{
+    background-color: black;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    width: 30%;
+    background-color: black;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgba(102, 102, 102, 0.5);
+}
+.bn{
+    display: inline-block; 
+    width: 100%;
+    height: 100%;
+}
+.l{
+    border: none;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+}
+.l:hover{
+    background-color: rgba(102, 102, 102, 0.5);
+}
+#w{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+#all{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
